@@ -10,23 +10,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="AMT home">AMT<span>.</span></a>
-    <nav class="nav" aria-label="Основная навигация">
-      <a href="#product">Продукт</a>
-      <a href="#technology">Технология</a>
-      <a href="#specs">Характеристики</a>
-    </nav>
-    <a class="header-cta" href="#contact">Связаться <span>↗</span></a>
-    <button class="menu-btn" aria-label="Открыть меню" aria-expanded="false">
-      <span></span><span></span>
-    </button>
+  <header class="header-conteiner">
+    <div class="site-header">
+      <a class="brand" href="#top" aria-label="AMT home">AMT<span>.</span></a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#product">Продукт</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#use-cases">Применение</a>
+        <a href="#technology">Технология</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="#specs">Характеристики</a>
+      </nav>
+      <a class="header-cta" href="#contact">Связаться <span>↗</span></a>
+      <button class="menu-btn" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero section-pad">
+    <div class="home section-bg">
+      <section class="hero section-pad">
       <div class="hero-copy reveal">
         <p class="eyebrow">AUTONOMOUS INDUSTRIAL DRONE / AMT-01</p>
         <h1>ПРОМЫШЛЕННЫЙ<br>ДРОН, КОТОРЫЙ<br><em>СЛЕДИТ.</em></h1>
@@ -43,8 +50,10 @@
         <div class="visual-tag bottom-tag">INDUSTRIAL INSPECTION</div>
       </div>
     </section>
+  </div>
 
-    <section id="product" class="section-pad detection">
+  <div class="section-bg">
+      <section id="product" class="section-pad detection">
       <div class="section-heading reveal">
         <p class="eyebrow">DETECTION / 01</p>
         <h2>ОБНАРУЖИТЬ<br>ПРОБЛЕМУ <em>РАНЬШЕ.</em></h2>
@@ -77,7 +86,66 @@
       </div>
     </section>
 
-    <section class="section-pad protection">
+    <div class="section-bg section-bg-light">
+      <div class="container">
+        <section id="advantages" class="section-pad">
+          <div class="reveal">
+            <div class="section-heading">
+              <p class="eyebrow">WHY AMT / 02</p>
+              <h2>ПОЧЕМУ ВЫБИРАЮТ<br>AMT <em>INSPECTOR?</em></h2>
+              <p>Наши решения помогают предприятиям сократить затраты на мониторинг и повысить безопасность.</p>
+            </div>
+            <div class="advantages-grid">
+              <article class="advantage-card reveal">
+                <div class="advantage-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Безопасность</h3>
+                <p>Снижение риска аварий на 80% благодаря раннему обнаружении угроз.</p>
+              </article>
+              <article class="advantage-card reveal reveal-delay">
+                <div class="advantage-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <h3>Круглосуточный мониторинг</h3>
+                <p>Непрерывный контроль объекта 24/7 в любых погодных условиях.</p>
+              </article>
+              <article class="advantage-card reveal reveal-delay-2">
+                <div class="advantage-icon">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3>Экономия средств</h3>
+                <p>Сокращение затрат на ручной мониторинг на 60% за счет автоматизации.</p>
+              </article>
+              <article class="advantage-card reveal reveal-delay-3">
+                <div class="advantage-icon">
+                  <i class="fas fa-cog"></i>
+                </div>
+                <h3>Легкая интеграция</h3>
+                <p>Быстрое развертывание на любом промышленном объекте.</p>
+              </article>
+              <article class="advantage-card reveal reveal-delay-4">
+                <div class="advantage-icon">
+                  <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Аналитика и отчетность</h3>
+                <p>Автоматическая генерация отчетов с визуализацией данных.</p>
+              </article>
+              <article class="advantage-card reveal reveal-delay-5">
+                <div class="advantage-icon">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <h3>Поддержка 24/7</h3>
+                <p>Техническая поддержка и мониторинг работы системы.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="section-bg">
+      <section class="section-pad protection">
       <div class="protection-card reveal">
         <div class="protection-image">
           <img src="assets/amt-drone.png" alt="AMT — защищённая конструкция">
@@ -98,8 +166,78 @@
         </div>
       </div>
     </section>
+  </div>
 
-    <section id="technology" class="section-pad cycle">
+  <div class="section-bg section-bg-dark">
+      <div class="container">
+        <section id="use-cases" class="section-pad">
+          <div class="reveal">
+            <div class="section-heading">
+              <p class="eyebrow">USE CASES / 03</p>
+              <h2>ПРИМЕРЫ<br>ПРИМЕНЕНИЯ</h2>
+              <p>Наши решения уже внедрены на различных промышленных объектах.</p>
+            </div>
+            <div class="use-cases-grid">
+              <article class="use-case-card reveal">
+                <div class="use-case-image">
+                  <img src="assets/fire-detection.jpg" alt="Обнаружение пожара на нефтебазе">
+                </div>
+                <div class="use-case-content">
+                  <h3>Нефтебазы и хранилища</h3>
+                  <p>Мониторинг температуры и обнаружение утечек на нефтехранилищах. Автоматическое оповещение при превышении пороговых значений.</p>
+                  <div class="use-case-tags">
+                    <span class="tag">Нефтегаз</span>
+                    <span class="tag">Пожарная безопасность</span>
+                  </div>
+                </div>
+              </article>
+              <article class="use-case-card reveal reveal-delay">
+                <div class="use-case-image">
+                  <div class="image-placeholder use-case-placeholder-1"></div>
+                </div>
+                <div class="use-case-content">
+                  <h3>Электростанции</h3>
+                  <p>Контроль состояния оборудования на ТЭЦ и АЭС. Обнаружение перегрева трансформаторов, кабелей и других критических узлов.</p>
+                  <div class="use-case-tags">
+                    <span class="tag">Энергетика</span>
+                    <span class="tag">Предотвращение аварий</span>
+                  </div>
+                </div>
+              </article>
+              <article class="use-case-card reveal reveal-delay-2">
+                <div class="use-case-image">
+                  <div class="image-placeholder use-case-placeholder-2"></div>
+                </div>
+                <div class="use-case-content">
+                  <h3>Промышленные предприятия</h3>
+                  <p>Мониторинг производственных линий, складов и цехов. Обнаружение утечек газа, перегрева оборудования и других угроз.</p>
+                  <div class="use-case-tags">
+                    <span class="tag">Промышленность</span>
+                    <span class="tag">Безопасность труда</span>
+                  </div>
+                </div>
+              </article>
+              <article class="use-case-card reveal reveal-delay-3">
+                <div class="use-case-image">
+                  <div class="image-placeholder use-case-placeholder-3"></div>
+                </div>
+                <div class="use-case-content">
+                  <h3>Лесные массивы</h3>
+                  <p>Патрулирование лесных участков для раннего обнаружения пожаров. Автоматическое оповещение лесных служб при выявлении очагов.</p>
+                  <div class="use-case-tags">
+                    <span class="tag">Лесное хозяйство</span>
+                    <span class="tag">Экология</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="section-bg section-bg-light">
+      <section id="technology" class="section-pad cycle">
       <div class="cycle-top reveal">
         <div>
           <p class="eyebrow">AUTONOMOUS CYCLE / 03</p>
@@ -139,7 +277,9 @@
 
       <div class="cycle-line reveal">PATROL <b>→</b> DETECT <b>→</b> INSPECT <b>→</b> DOCK <span>↗</span></div>
     </section>
+  </div>
 
+  <div class="section-bg">
     <section class="section-pad statement">
       <div class="statement-grid reveal">
         <div class="statement-image">
@@ -154,7 +294,68 @@
       </div>
     </section>
 
-    <section id="specs" class="section-pad specs">
+    <div class="section-bg section-bg-light">
+      <div class="container">
+        <section id="testimonials" class="section-pad">
+          <div class="reveal">
+            <div class="section-heading">
+              <p class="eyebrow">TESTIMONIALS / 05</p>
+              <h2>ЧТО ГОВОРЯТ<br>НАШИ <em>КЛИЕНТЫ</em></h2>
+            </div>
+            <div class="testimonials-grid">
+              <article class="testimonial-card reveal">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">Благодаря AMT Inspector мы смоги сократить количество ложных срабатываний на 70% и повысить безопасность нашего нефтехранилища. Система работает стабильно даже в сложных погодных условиях.</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <span>A</span>
+                  </div>
+                  <div class="author-info">
+                    <h4>Алексей Петров</h4>
+                    <p>Начальник службы безопасности, ОАО «Нефтегаз»</p>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card reveal reveal-delay">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">Отличное решение для мониторинга электростанций. Система быстро интегрировалась с нашими существующими системами безопасности и уже предотвратила несколько потенциально опасных ситуаций.</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <span>M</span>
+                  </div>
+                  <div class="author-info">
+                    <h4>Михаил Сидоров</h4>
+                    <p>Главный инженер, ТЭЦ-5</p>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card reveal reveal-delay-2">
+                <div class="testimonial-quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">Используем AMT Inspector для патрулирования лесных массивов. Система позволяет обнаруживать очаги пожара на ранних стадиях, что значительно сокращает время реагирования.</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">
+                    <span>D</span>
+                  </div>
+                  <div class="author-info">
+                    <h4>Дмитрий Кузнецов</h4>
+                    <p>Директор лесного хозяйства, «Зеленый щит»</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="section-bg">
+      <section id="specs" class="section-pad specs">
       <div class="specs-card reveal">
         <div class="specs-head">
           <div>
@@ -164,24 +365,80 @@
           <span class="specs-label">AUTONOMOUS INDUSTRIAL DRONE</span>
         </div>
         <div class="spec-list">
-          <div><span>MONITORING</span><strong>Thermal / Gas / Acoustic / Video</strong></div>
-          <div><span>OPERATION</span><strong>Autonomous patrol</strong></div>
-          <div><span>PROTECTION</span><strong>Protected frame</strong></div>
-          <div><span>DOCKING</span><strong>Automatic return & charging</strong></div>
-          <div><span>MISSION</span><strong>Industrial inspection</strong></div>
+          <div><span><i class="fas fa-thermometer-half"></i> MONITORING</span><strong>Thermal / Gas / Acoustic / Video</strong></div>
+          <div><span><i class="fas fa-robot"></i> OPERATION</span><strong>Autonomous patrol</strong></div>
+          <div><span><i class="fas fa-shield-alt"></i> PROTECTION</span><strong>Protected frame</strong></div>
+          <div><span><i class="fas fa-battery-full"></i> DOCKING</span><strong>Automatic return & charging</strong></div>
+          <div><span><i class="fas fa-industry"></i> MISSION</span><strong>Industrial inspection</strong></div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section-pad contact">
-      <div class="contact-card reveal">
-        <div>
-          <p class="eyebrow">AMT / NEXT STEP</p>
-          <h2>ПОСМОТРИМ<br>AMT В <em>РАБОТЕ?</em></h2>
-        </div>
-        <a class="button button-light" href="mailto:hello@amt.example">Запросить демонстрацию <span>↗</span></a>
+    <div class="section-bg section-bg-light">
+      <div class="container">
+        <section id="contact" class="section-pad">
+          <div class="reveal">
+            <div class="section-heading">
+              <p class="eyebrow">CONTACT / 06</p>
+              <h2>СВЯЖИТЕСЬ<br>С <em>НАМИ</em></h2>
+              <p>Заполните форму, чтобы запросить демонстрацию или получить консультацию.</p>
+            </div>
+            <div class="contact-container">
+              <div class="contact-form-wrapper reveal">
+                <form class="contact-form" id="contactForm">
+                  <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Телефон (необязательно)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Опишите ваш запрос..." required></textarea>
+                  </div>
+                  <button type="submit" class="button button-dark">Отправить запрос <span>↗</span></button>
+                </form>
+              </div>
+              <div class="contact-info-wrapper reveal reveal-delay">
+                <h3>Контактная информация</h3>
+                <div class="contact-methods">
+                  <div class="contact-method">
+                    <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <span>123007, Москва, ул. Тверская, д. 10</span>
+                  </div>
+                  <div class="contact-method">
+                    <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                    <a href="mailto:info@amt-inspector.ru">info@amt-inspector.ru</a>
+                  </div>
+                  <div class="contact-method">
+                    <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                  </div>
+                  <div class="contact-method">
+                    <span class="contact-icon"><i class="fas fa-clock"></i></span>
+                    <span>Пн-Пт: 9:00 - 18:00</span>
+                  </div>
+                </div>
+                <div class="social-links">
+                  <h4>Мы в социальных сетях</h4>
+                  <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">
