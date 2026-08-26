@@ -1134,3 +1134,203 @@ em { color: var(--accent); font-style: normal; }
     font-size: 32px;
   }
 }
+
+
+/* === БЛОК ПОДДЕРЖКИ === */
+.support-block {
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--bg);
+}
+
+.support-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.support-grid {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.support-logos {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+}
+
+.support-logos img {
+  display: block;
+  height: 80px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.support-logos img:hover {
+  opacity: 1;
+}
+
+.support-text p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.support-highlight {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .support-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .support-logos {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .support-logos img {
+    height: 32px;
+  }
+
+  .support-text p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .support-block {
+    padding: 30px 0;
+  }
+  
+  .support-logos img {
+    height: 28px;
+  }
+  
+  .support-text p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+}
+
+
+
+/* === STATEMENT: ДРОН ВЫХОДИТ ТОЛЬКО ВЛЕВО === */
+.statement-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 16px;
+  align-items: stretch;
+  position: relative;
+  overflow: visible;
+}
+
+.statement-grid .statement-image.drone-wrapper {
+  position: relative;
+  background: #b2b2b2;
+  min-height: 580px;
+  border-radius: var(--radius) 0 0 var(--radius);
+  overflow: hidden; /* скрывает только справа */
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.statement-grid .statement-image.drone-wrapper .drone-image {
+  max-width: none;
+  height: 100%;
+  min-height: 580px;
+  position: relative;
+  left: -30px; /* сдвигаем влево, чтобы выходил за рамку */
+  z-index: 1;
+  object-fit: contain !important;
+  object-position: left center;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.25));
+  transform: scale(1.1);
+}
+
+.statement-grid .statement-image.drone-wrapper span {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  padding: 10px 13px;
+  border-radius: 999px;
+  background: rgba(241, 239, 233, 0.88);
+  font: 600 10px "Space Grotesk", sans-serif;
+  z-index: 5;
+}
+
+.statement-grid .statement-copy {
+  position: relative;
+  z-index: 10;
+  min-height: 580px;
+  border: 1px solid var(--line);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 60px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: var(--paper);
+}
+
+@media (max-width: 900px) {
+  .statement-grid {
+    grid-template-columns: 1fr;
+  }
+  .statement-grid .statement-image.drone-wrapper {
+    min-height: 420px;
+    border-radius: var(--radius) var(--radius) 0 0;
+    justify-content: center;
+  }
+  .statement-grid .statement-image.drone-wrapper .drone-image {
+    left: 0;
+    min-height: 420px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+  }
+  .statement-grid .statement-copy {
+    min-height: 340px;
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 36px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .statement-grid .statement-image.drone-wrapper {
+    min-height: 300px;
+  }
+  .statement-grid .statement-image.drone-wrapper .drone-image {
+    min-height: 300px;
+    transform: scale(1);
+  }
+  .statement-grid .statement-image.drone-wrapper span {
+    font-size: 8px;
+    padding: 6px 10px;
+    left: 12px;
+    bottom: 12px;
+  }
+  .statement-grid .statement-copy {
+    min-height: 280px;
+    padding: 28px 20px;
+  }
+  .statement-grid .statement-copy h2 {
+    font-size: clamp(30px, 10vw, 42px);
+  }
+}
