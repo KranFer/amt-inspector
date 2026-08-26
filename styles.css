@@ -1242,7 +1242,7 @@ em { color: var(--accent); font-style: normal; }
   position: relative;
   background: #b2b2b2;
   min-height: 580px;
-  border-radius: var(--radius) 0 0 var(--radius);
+  border-radius: var(--radius);
   overflow: hidden; /* скрывает только справа */
   z-index: 0;
   display: flex;
@@ -1280,7 +1280,7 @@ em { color: var(--accent); font-style: normal; }
   z-index: 10;
   min-height: 580px;
   border: 1px solid var(--line);
-  border-radius: 0 var(--radius) var(--radius) 0;
+  border-radius: var(--radius);
   padding: 60px 52px;
   display: flex;
   flex-direction: column;
@@ -1332,4 +1332,25 @@ em { color: var(--accent); font-style: normal; }
   .statement-grid .statement-copy h2 {
     font-size: clamp(30px, 10vw, 42px);
   }
+}
+
+
+/* === УБРАТЬ СКРОЛЫ (БЕЗ ОБРЕЗАНИЯ PNG) === */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Скрываем скроллбар для всех браузеров */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
